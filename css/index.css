@@ -1,0 +1,384 @@
+.slideBox {
+  width: 100%;
+  height: 48px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ddd;
+}
+
+.slideBox .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+.slideBox .bd li {
+  zoom: 1;
+  vertical-align: middle;
+}
+.slideBox .bd li div {
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  text-align: center;
+}
+#slideBox .bd li a {
+  line-height: 48px;
+  color: #fff;
+}
+#slideBox .iconfont {
+  color: #fff;
+  line-height: 48px;
+}
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  margin-top: -25px;
+  display: block;
+  width: 32px;
+  color: #fff;
+  height: 40px;
+
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.slideBox .next {
+  left: auto;
+  right: 3%;
+  background-position: 8px 5px;
+}
+.slideBox .close {
+  left: auto;
+  width: 32px;
+  height: 40px;
+  background-position: 8px 5px;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  color: #fff;
+  display: block;
+
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.slideBox .prev:hover,
+.slideBox .next:hover,
+.slideBox .close:hover {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.slideBox .prevStop {
+  display: none;
+}
+.slideBox .nextStop {
+  display: none;
+}
+/* 导航 */
+section {
+  width: 100%;
+  height: 82px;
+
+  padding: 0;
+  margin: 0;
+}
+.wp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+  max-width: 1280px;
+  margin: auto;
+}
+#nav-l {
+  width: 515px;
+  display: flex;
+  height: 82px;
+  line-height: 82px;
+}
+
+#nav-l div {
+  margin: 0 20px;
+}
+#nav-m img {
+  width: 250px;
+  height: 45px;
+}
+#nav-r {
+  display: flex;
+  justify-content: flex-end;
+  width: 515px;
+  height: 60px;
+  color: #000;
+  line-height: 60px;
+}
+#nav-r .reg {
+  display: none;
+}
+
+#nav-r .r-text1 a {
+  color: #000;
+}
+#nav-r .r-text,
+#nav-r .r-text1 {
+  float: left;
+  margin: 0 20px;
+}
+/* nav */
+nav {
+  height: 48px;
+}
+nav .wp {
+  height: 48px;
+}
+nav .nav-left ul {
+  display: flex;
+  width: 880px;
+}
+nav .nav-left ul li {
+  margin: 0 20px;
+  line-height: 48px;
+  width: 98px;
+}
+nav .nav-right {
+  width: 160px;
+  height: 48px;
+  /* display: flex; */
+  align-items: center;
+  padding: 0 15px 0 20px;
+  height: 100%;
+}
+nav .nav-right input {
+  position: relative;
+  height: 46px;
+  background-color: #000;
+  width: 160px;
+  border: 1px solid #000;
+}
+
+nav .nav-right span {
+  position: absolute;
+  right: 120px;
+  top: 150px;
+  color: #fff;
+}
+/* 轮播图 */
+.banner-f {
+  width: 100%;
+  height: 495px;
+}
+.slideBoxx {
+  width: 100%;
+  height: 495px;
+  overflow: hidden;
+  position: relative;
+}
+.slideBoxx .hd {
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  right: 650px;
+  bottom: 5px;
+  z-index: 1;
+}
+.slideBoxx .hd ul {
+  overflow: hidden;
+  zoom: 1;
+  float: left;
+}
+.slideBoxx .hd ul li {
+  float: left;
+  margin-right: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  line-height: 14px;
+  text-align: center;
+  background: gray;
+  cursor: pointer;
+}
+.slideBoxx .hd ul li.on {
+  background: #000;
+  color: #fff;
+}
+.slideBoxx .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+.slideBoxx .bd li {
+  zoom: 1;
+  vertical-align: middle;
+}
+.slideBoxx .bd img {
+  width: 100%;
+  height: 495px;
+  display: block;
+}
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+
+.slideBoxx .prev,
+.slideBoxx .next {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  margin-top: -25px;
+  display: block;
+  width: 32px;
+  height: 40px;
+  background: url(../images/slider-arrow.png) -110px 5px no-repeat;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+.slideBoxx .prev img,
+.slideBoxx .next img {
+  width: 47px;
+  height: 71px;
+}
+.slideBoxx .next {
+  left: auto;
+  right: 3%;
+  background-position: 8px 5px;
+}
+.slideBoxx .prev:hover,
+.slideBoxx .next:hover {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.slideBoxx .prevStop {
+  display: none;
+}
+.slideBoxx .nextStop {
+  display: none;
+}
+/* 背景图 */
+.bannerimg {
+  width: 100%;
+  height: 211.5px;
+}
+.bannerimg img {
+  width: 100%;
+  height: 100%;
+}
+/* 三张图 */
+.firstproduct {
+  width: 1440px;
+  height: 399px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+.firstproduct .boxx {
+  margin: 0 auto;
+
+  width: 1000px;
+}
+.firstproduct img {
+  width: 306px;
+  height: 399px;
+}
+/* 背景图2 */
+.bannerimg2 {
+  width: 100%;
+  height: 167px;
+}
+.bannerimg2 img {
+  width: 100%;
+  height: 100%;
+}
+/* 选项卡 */
+.Tab-Control {
+  /* height: 85.5px; */
+  height: 1000px;
+  width: 100%;
+  background-color: red;
+}
+
+/*  */
+footer {
+  width: 100%;
+  height: 575.38px;
+  background-color: #000;
+}
+footer .footer_box {
+  width: 100%;
+  height: 575.38px;
+}
+footer .footer_top {
+  width: 100%;
+  height: 151px;
+
+  display: flex;
+}
+footer .footer_top div {
+  flex: 1;
+
+  border: 1px solid gray;
+  height: 150px;
+}
+footer .footer_top div img {
+  width: 80.5px;
+  height: 46px;
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+}
+footer .footer_top div p {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+footer .footer_center {
+  height: 264.38px;
+
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+footer .footer_center .dingyue {
+  padding: 40px 0;
+}
+footer .footer_center .dingyue p {
+  font-size: 14px;
+}
+footer .footer_center .dingyue input {
+  width: 204px;
+  height: 40px;
+}
+footer .footer_center .footer_list {
+  padding: 34px 0;
+}
+footer .footer_bottom {
+  width: 1280px;
+  margin: 0 auto;
+  color: gray;
+  font-size: 12px;
+  height: 160px;
+}
+footer .footer_bottom .footer_bottom_info {
+  display: flex;
+  margin-top: 16px;
+  justify-content: space-between;
+}
+
+footer .footer_bottom .footer_bottom_info .left {
+  display: flex;
+}
+footer .footer_bottom .footer_bottom_info .left p {
+  margin-right: 23px;
+}
+footer .footer_bottom .footer_bottom_info .right a {
+  margin-left: 30px;
+  color: gray;
+}
+/* 注册 */
+.reg {
+  display: none;
+}

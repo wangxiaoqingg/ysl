@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link
+      rel="stylesheet"
+      href="//at.alicdn.com/t/font_3248215_i7ts0gh2oxm.css"
+    />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+  <body>
+   
+    <div id="dialog-container">
+               
+        <div class="content">
+          <div class="iconfont icon-guanbi " id="guanbi" onclick="closePage()"></div>
+            <div class="login-dialog-title">
+             
+                欢迎登录YSL官网
+            </div>
+            <div class="login-dialog-header">
+                <span>短信快捷登录/注册</span>
+                <span>账号密码登录</span>
+            </div>
+            
+            <div id="left-content">
+                <div calss="verification-code-method">
+                    <div class="phone error">
+                        <input id="username" type="text" placeholder="请输入用户名">
+                        <span>请输入有效手机号</span>
+                    </div>
+                    <div class="flex_box">
+                        <div class="form_item">
+                            <input id="password" type="text" placeholder="登录密码">
+                            <span>请输入四位有效验证码</span>
+                        </div>
+                        <div class="code-wrap">
+
+                        </div>
+                       
+                    </div>
+                    <div class="duanxin-out">
+                        <div class="duanxin">
+                            <input type="text" placeholder="短信验证码">
+                            <span>请输入有效短信验证码</span>
+                        </div>
+                        <div class="sendBtn">
+                        
+                        </div>
+                    </div>
+                    <div class="xieyi">
+                        <p>
+                         <input type="checkbox">
+                            我同意协议条款和隐私政策
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="btn-box">
+                    <!-- <a href="" class="btn">登录</a> -->
+                    <button>注册</button>
+                </div>
+                <div class="three-out">
+                    <div class="three">
+                        <div class="before"></div>
+                        使用第三方账号登录
+                        <div class="after"></div>
+                    </div>
+                    <ul class="tubiao">
+                        <li><a href=""><i class="iconfont icon-88"></i></a></li>
+                        <li><a href=""><i class="iconfont icon-zhifubao"></i></a</li>
+                        <li><a href=""><i class="iconfont icon-tengxun"></i></a></li>
+                        <li><a href=""><i class="iconfont icon-weibo"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("button").click(function(){
+        var userName = $("#username").val();
+        var password = $("#password").val();
+        $.ajax({
+          url: "http://lanlianhua.work:3009/api/v1/auth/reg",
+          type: "post",
+          data: {
+            userName,
+            password,
+          },
+          success: (res) => {
+            console.log(res);
+            localStorage.setItem("token", res.token);
+            location.href = "./index.html";
+          },
+        }); 
+    })
+        
+    </script>
+  </body>
+</html>
+

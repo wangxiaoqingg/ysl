@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* .reg {
+  width: 480px;
+  height: 592px;
+} */
+a {
+  text-decoration: none;
+}
+
+#dialog-container {
+  width: 500px;
+  height: 592px;
+  z-index: 2;
+  position: absolute;
+  left: 400px;
+  background-color: #fff;
+  display: none;
+}
+
+#dialog-container .content {
+  width: 500px;
+  height: 590px;
+}
+/* #dialog-container .content .iconfont {
+  width: 12px;
+  height: 12px;
+} */
+#dialog-container .content #guanbi {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 7%;
+  top: 1%;
+}
+#dialog-container .login-dialog-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 500px;
+  height: 30px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#dialog-container .login-dialog-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 20px;
+  height: 30px;
+
+  /* border-bottom: 1px solid #e5e5e5; */
+}
+#dialog-container .login-dialog-header span {
+  flex: 1;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  width: 180px;
+  /* border-bottom: 1px solid black; */
+  margin-bottom: -1px;
+}
+#dialog-container #left-content {
+  width: 360px;
+  height: 492px;
+  margin: 0 auto;
+}
+.phone {
+  margin-bottom: 30px;
+  height: 45px;
+  line-height: 45px;
+  /* border: 1px solid #dadada; */
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  display: flex;
+}
+.phone input {
+  flex-grow: 1;
+  min-width: 30px;
+  font-size: 14px;
+  outline: none;
+  width: 338px;
+  height: 43px;
+}
+.phone span {
+  color: red;
+  position: absolute;
+  left: 10px;
+  top: 49px;
+  line-height: 12px;
+  font-size: 12px;
+  display: none;
+}
+.flex_box {
+  display: flex;
+  overflow: hidden;
+}
+.flex_box .form_item {
+  flex-grow: 1;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  display: flex;
+}
+.flex_box .form_item input {
+  flex-grow: 1;
+  min-width: 30px;
+  font-size: 14px;
+  width: 226px;
+  height: 43px;
+  margin-bottom: 10px;
+}
+
+.flex_box .form_item span {
+  display: none;
+}
+.flex_box .code-wrap {
+  width: 102px;
+  height: 45px;
+  line-height: 45px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.duanxin-out {
+  display: flex;
+  overflow: hidden;
+}
+.duanxin-out .duanxin {
+  flex-grow: 1;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  display: flex;
+}
+.duanxin-out .duanxin input {
+  flex-grow: 1;
+  min-width: 30px;
+  font-size: 14px;
+  width: 226px;
+  height: 43px;
+}
+.duanxin-out .duanxin span {
+  display: none;
+}
+.duanxin-out .sendBtn {
+  width: 102px;
+  height: 45px;
+  line-height: 45px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.xieyi {
+  margin-left: 10px;
+}
+.xieyi p {
+  /* margin: 0 0 10px; */
+  height: 18px;
+  width: 360px;
+  padding-bottom: 10px;
+}
+.btn-box {
+  margin: 20px 0;
+  overflow: hidden;
+}
+.btn-box a {
+  text-align: center;
+  display: block;
+  min-width: 180px;
+  height: 48px;
+  line-height: 46px;
+  background: #000;
+  color: #fff;
+}
+.three-out .three {
+  text-align: center;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  height: 50px;
+}
+.tubiao li {
+  list-style: none;
+}
+.tubiao {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.tubiao .iconfont {
+  font-size: 40px;
+  color: black;
+}
